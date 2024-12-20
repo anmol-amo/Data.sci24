@@ -1,0 +1,52 @@
+'''''
+print ("hello, what is your name")
+name = input()
+print ("welcome back", name)
+
+
+print ("pick a number")
+num1 = input()
+print ("pick another number")
+num2 = input()
+sum = int(num1) * int(num2)
+print(sum)
+'''
+'''''
+produkt = {
+    "name": "Laptop",
+    "pris": 1000,
+    "lager": 50
+}
+#print pris
+print (produkt["pris"])
+
+#lägg till en ny kategori
+produkt ["kategori"] = "elektronics"
+print (produkt)
+
+#uppdatera lager
+produkt["lager"] = 40
+print(produkt)
+'''
+'''''
+person = {"name": "Anna", "age": 25, "city": "stockholm"}
+
+for attribut, varde in person.items():
+    print(f'personens {attribut} är {varde}')
+'''
+'''''
+# skriv input talet positiv med condition
+while True:
+    x = int(input("skriv ett tal: "))
+    if x > 0:
+        print ("Talet är positiv")
+    elif x < 0:
+        print("Talet är negativ")
+    else:
+        print("Talet är noll")
+    fortsatt = input("vill du forsätt? (j/n)")
+    if fortsatt == "n":
+       print ("Hej då!")
+       break
+'''
+
