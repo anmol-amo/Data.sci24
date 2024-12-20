@@ -49,4 +49,11 @@ while True:
        print ("Hej då!")
        break
 '''
-
+'''''
+# make a password with condition
+lösenord = input ("Ange lösenord")
+if len(lösenord) >= 8 and "@" in lösenord:
+    print ("lösenordet är giltig. ")
+else:
+    print("Ogiltig lösenord. ")
+'''
