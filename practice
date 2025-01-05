@@ -57,3 +57,20 @@ if len(lösenord) >= 8 and "@" in lösenord:
 else:
     print("Ogiltig lösenord. ")
 '''
+'''''
+age = input('input your age: ')
+
+if int(age) >= 16:
+    print('hej youre older than 16')
+'''
+
+height = input()
+
+if int(height) <= 1:
+    print('you cannot ride , under 1m')
+elif int(height) == 5:
+    print('wow you are tall')
+elif int(height) >= 2:
+    print('you cannot ride over 2m')
+else:
+    print('you can ride')
