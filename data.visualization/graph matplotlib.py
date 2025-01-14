@@ -1,10 +1,8 @@
 import matplotlib.pyplot as plt
-import numpy as np
-import math
 
-x_vals = np.linspace(0, 20, 20)
-print(x_vals)
-y_vals = [math.sqrt(i) for i in x_vals]
-plt.plot(x_vals, y_vals)
+labels = 'IT', 'Marketing', 'Data Science', 'Finance'
+values = [500, 156, 300, 510]
+explode = (0.05, 0.05, 0.05, 0.05) 
 
+plt.pie(values, labels=labels, autopct='%1.1f%%', shadow=False)
 plt.show()
