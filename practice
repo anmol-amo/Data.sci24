@@ -63,7 +63,7 @@ age = input('input your age: ')
 if int(age) >= 16:
     print('hej youre older than 16')
 '''
-
+'''''
 height = input()
 
 if int(height) <= 1:
@@ -74,3 +74,10 @@ elif int(height) >= 2:
     print('you cannot ride over 2m')
 else:
     print('you can ride')
+'''
+ 
+text = 'hello i like you'
+
+print(text[0:4])
+
+
