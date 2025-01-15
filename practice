@@ -76,8 +76,6 @@ else:
     print('you can ride')
 '''
  
-text = 'hello i like you'
 
-print(text[0:4])
 
 
