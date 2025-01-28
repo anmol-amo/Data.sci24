@@ -24,7 +24,7 @@ print(grouped_data.head())
 
 
 # sparar fil som excel_fil
-file_path = ('/Users/anmolwakas/inlämmnings/inlänningpython.xlsx')
+file_path = ('/Users/anmolwakas/Documents/data science/unemployed_refund.csv')
 df.to_excel(file_path, index=False)
 
 print(f"File saved successfully to {file_path}")
@@ -89,3 +89,19 @@ plt.ylabel("frequency", fontsize=14)
 # plt.show()
 
 
+plt.figure(figsize=(12, 6))
+bar_width = 0.35
+index = range(len(df['year']))
+
+plt.bar(index, df['age range_year'], bar_width, label='age range_year', color='skyblue', edgecolor='black')
+plt.bar([i + bar_width for i in index], df['persons'], bar_width, label='persons', color='salmon', edgecolor='black')
+
+plt.title('Relation mellan födda och döda per år')
+plt.xlabel('year')
+plt.ylabel('Avg. age personer')
+plt.xticks([i + bar_width / 2 for i in index], df['year'])
+plt.legend()
+plt.grid(axis='y', linestyle='--', alpha=0.6)
+
+plt.tight_layout()
+plt.show()
