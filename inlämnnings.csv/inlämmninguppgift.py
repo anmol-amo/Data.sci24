@@ -109,3 +109,22 @@ plt.show()
 # plt.title('Mest betalda år')
 # plt.axis('equal')  # Gör cirkeln rund
 # plt.show()
+'''''
+# så här var det året mellan 2020 och 2022 den mest arbetslösa perioden hittills.
+file_path = ('/Users/anmolwakas/Documents/data science/inlämnnings.csv/unemployed_refund.csv')
+
+# Read the CSV file
+df = pd.read_csv(file_path)
+
+plt.figure(figsize=(7, 9))
+plt.scatter(df['year'], df['persons'], color='skyblue', alpha=0.9)
+
+# Labels and title
+plt.xlabel('year of Unemployed People')
+plt.ylabel('persons')
+plt.title('year of most unemloyment')
+
+# Show the plot
+plt.grid(False)
+plt.show()
+'''
