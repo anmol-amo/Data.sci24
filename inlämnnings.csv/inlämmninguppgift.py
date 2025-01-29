@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 
-#df = pd.read_csv('/Users/anmolwakas/Documents/data science/inlämnnings.csv/unemployed_refund.csv')
+df = pd.read_csv('/Users/anmolwakas/Documents/data science/inlämnnings.csv/unemployed_refund.csv')
 #print(df.head(10))
 # Hantera saknade värden.
 #print(df.isnull().sum())
@@ -33,7 +33,7 @@ import seaborn as sns
 
 #print(f"File saved successfully to {file_path}")
 
-'''''
+
 #den kommer att visa en arbetslöshetskurva enligt åldersgrupp.
 df_2 = pd.read_excel('/Users/anmolwakas/inlämmnings/inlänningpython.xlsx')
 
@@ -60,7 +60,7 @@ plt.ylabel("Total Average Amount per Person", fontsize=14)
 
 # Show plot
 plt.show()
-'''
+
 
 '''''
 import pandas as pd
@@ -91,24 +91,23 @@ plt.title("Anpassat stapeldiagram")
 plt.show()
 '''
 
-# import matplotlib.pyplot as plt
+#den ska visa vilket år har dem betalat mest pengar.
+#Gruppera datan och summera belopp
+#grouped_data = df.groupby('year')['amount_sek'].sum()
 
-# # Gruppera datan och summera belopp
-# grouped_data = df.groupby('year')['amount_sek'].sum()
-
-# # Hämta år och belopp
-# x = grouped_data.index    # År
-# y = grouped_data.values   # Summerade belopp
+# Hämta år och belopp
+#x = grouped_data.index    # År
+#y = grouped_data.values   # Summerade belopp
 
 # # Kontrollera x och y har värden
-# print("Labels (x)", x)
-# print("Values (y)", y)
+#print("Labels (x)", x)
+#print("Values (y)", y)
 
 # # Skapa cirkeldiagram
-# plt.pie(y, labels=x, autopct='%1.1f%%', startangle=90)
-# plt.title('Mest betalda år')
-# plt.axis('equal')  # Gör cirkeln rund
-# plt.show()
+#plt.pie(y, labels=x, autopct='%1.1f%%', startangle=90)
+#plt.title('Mest betalda år')
+#plt.axis('equal')  # Gör cirkeln rund
+#plt.show()
 '''''
 # så här var det året mellan 2020 och 2022 den mest arbetslösa perioden hittills.
 file_path = ('/Users/anmolwakas/Documents/data science/inlämnnings.csv/unemployed_refund.csv')
